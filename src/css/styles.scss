@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap');
+$border: 1px solid white;
+
+
+// Header JSX Styling
+header{
+    margin-top: 35px;
+    padding: 0px 16px 0px 16px;
+    // border: $border;
+
+    nav{
+        // border: $border;
+        display: flex;
+        height: 8vh;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        
+
+        a{
+            font-family: "Russo One";
+            font-size: 1.5em;
+            color: #F1F5F9;
+            text-decoration: none;
+            transition: color 0.25s,
+                        transform 0.50s ease-out;
+
+            &:hover{
+              color: #646cff;
+              transform: translateX(25px);
+            }
+        }
+        
+        img{
+            height: 30px;
+            transition: transform 0.50s ease-out;
+            
+            &:hover{
+                transform: translateX(-25px);
+            }
+        }
+    }
+}
+
+
+// Main JSX Styling
+main{
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    // border: $border;
+    height: 80vh;
+    box-sizing: border-box;
+    overflow: scroll;
+    scrollbar-width: none;
+
+
+
+    // Logo JSX Styling
+    .logo-container{
+        position: absolute;
+        bottom: 60px;
+        // border: $border;
+        
+        a{  
+            display: flex;
+            align-items: center;
+            color: #F1F5F9;
+            text-decoration: none;
+            border-radius: 50%;
+            // border: $border;
+            transition: color 0.25s, 
+                        transform 0.50s ease-out,
+                        background-color 0.50s ease;
+
+            img{
+                height: 30px;
+                margin-right: 8px;
+                margin: 10px; 
+            }
+
+
+            &:hover{
+                
+                transform: translateX(25px);
+                background-color: #646cff;
+                
+             }
+            
+        }
+    }
+
+
+    // Navigation JSX Styling
+    .navigation-container{
+        // border: $border;
+        height: auto;
+        width: 100%;
+        align-content: center;
+        
+        ul{
+            text-align: center;
+            // border: $border;
+            list-style: none;
+
+            p{
+                font-family: 'Kanit';
+                font-size: 45px;
+                color: #F1F5F9;
+                text-decoration: none;
+                transition: color 0.50s ease-out,
+                            font-size 0.25s ease-out,
+                            font-family 0.25s ease-out;
+
+                &:hover{
+                    color: #646cff;
+                    font-size: 65px;
+                    font-family: 'Russo One';
+                }
+                
+            }
+        }
+    }
+
+
+    //Home JSX Styling
+    .landing-container{
+        position: absolute;
+        right: 75px;
+        bottom:45px ;
+        text-align: right;
+       
+    
+        .first-name{
+            font-size: 48px;
+        }
+        .middle-last{
+            font-size: 36px;
+        }
+
+        span{
+            display: inline-block;
+        }
+
+        
+        
+        h1, h2, h3, a{
+            // border: $border;
+            color: #F1F5F9;
+            transition: color 0.25s ease,
+                        transform 0.50s ease-out;
+
+            &:hover{
+                color: #646cff;
+                transform: translateX(-45px),;
+
+                a{
+                   text-shadow: 3px 3px 12px #646cff;
+                   color: #F1F5F9;
+                }
+            }
+        }
+
+        h1{
+            font-family: "Russo One";
+        }
+
+        .design-credit{
+            color: #F1F5F9;
+            font-family: 'Roboto';
+
+            a{
+                // text-shadow: 3px 3px 12px #646cff;
+                color: #646cff;
+                text-decoration: none;
+                &:active{
+                    color: #F1F5F9;
+                }
+            }
+        }
+
+
+        hr{
+            position: absolute;
+            right: 5px;
+            width: 35vh;
+        }
+    }
+
+
+    //Profile JSX styling
+    .profile-container{
+        padding: 0 100px;
+        section{
+            // border: $border;
+
+            p{
+                text-align: justify;
+            }
+
+            h2, h3, p, li, p{
+                color: #F1F5F9;
+                transition: color 0.50s ease-out,
+                            font-size 0.50s ease-out,
+                            font-family 0.50s ease-out,
+                            transform 0.50s ease-out;
+
+                &:hover{
+                    color: #646cff;
+                    // font-size: 18px;
+                    font-family: 'Russo One';
+                    transform: translateX(25px);
+
+                    
+                }
+            }
+        }
+
+        p{
+            color: #F1F5F9;
+            transition: color 0.50s ease-out,
+                            font-size 0.50s ease-out,
+                            font-family 0.50s ease-out,
+                            transform 0.50s ease-out;
+
+            &:hover{
+                color: #646cff;
+                // font-size: 18px;
+                font-family: 'Russo One';
+                transform: translateX(25px);
+            }
+        }
+
+    }
+}
