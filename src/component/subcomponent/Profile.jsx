@@ -42,7 +42,7 @@ const Profile = () => {
                     <li>Database Management: MySQL (XAMPP), MongoDB, Firebase (Basic CRUD)</li>
                     <li>Version Control: Git (clone, commit, push, pull, branch switching, GitHub Pages)</li>
                     <li>System Design: Basic understanding of system flow and design principles</li>
-                    <li>Data Structures & Algorithms: Foundational knowledge</li>
+                    <li>Data Structures & Algorithms: Basic knowledge</li>
                 </ul>
             </section>
             <hr />
@@ -54,11 +54,21 @@ const Profile = () => {
                 <h3>TVL - ICT (2018 – 2020)</h3>
             </section>
             <p>I am always open to new opportunities where I can apply my skills, learn, and contribute to meaningful projects.</p>
+            <hr />
+            <div className="profile-footer">
+                <address>8 Rodeanna 5 Tanguile ST. Brgy. Fortune, Marikina City </address>
+                <p>Please check my other website <a href="http://www.nakiri.space" target="_blank" rel="noopener noreferrer">Nakiri's website</a></p>
+                <p>Email me at <a href="mailto:christianalupit24@outlook.com">christianalupit24@outlook.com</a></p>
+                <p>Contact me at <a href="tel:+639939609498">09939609498</a></p>
+                <p>&copy; 2025 Nakiri's group of website. All rights reserved.</p>
+            </div>
 
         </div>
+
+        
     
     </>
   )
 }
 
-export default Profile
+export default Profile;

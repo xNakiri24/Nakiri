@@ -4,7 +4,8 @@ import Logo from './subcomponent/Logo'
 import Profile from './subcomponent/Profile'
 import Home from './subcomponent/home'
 import Navigation from './subcomponent/Navigation'
-import { RouteContext, useRoute } from '../context/RouteContext'
+import Project from './subcomponent/Project'
+import { useRoute } from '../context/RouteContext'
 
 const Main = () => {
 
@@ -21,6 +22,7 @@ const Main = () => {
         {data.page === "Navigation" && <Navigation />}
         {data.page === "Home" && <Home />}
         {data.page === "Profile" && <Profile /> }
+        {data.page === "Project" && <Project /> }
     </main>
     
     </>
