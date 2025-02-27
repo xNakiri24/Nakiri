@@ -510,8 +510,6 @@
   }
   main .logo-container {
     width: 85vw;
-    position: absolute;
-    bottom: 12px;
     display: flex;
     justify-content: space-around;
   }
