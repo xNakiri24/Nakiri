@@ -126,9 +126,7 @@
     color: #f1f5f9;
   }
   main .landing-container hr {
-    position: relative;
-    left: 450px;
-    width: 35vh;
+    display: none;
   }
   main .profile-container {
     padding: 0 100px;
