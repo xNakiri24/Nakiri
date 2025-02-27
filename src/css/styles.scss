@@ -1,50 +1,340 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap");
 $border: 1px solid white;
 
+@media (min-width: 1200px) {
 
-// Header JSX Styling
-header{
+  // Header JSX Styling
+  header {
     margin-top: 35px;
     padding: 0px 16px 0px 16px;
     // border: $border;
 
-    nav{
-        // border: $border;
-        display: flex;
-        height: 8vh;
-        align-items: center;
-        justify-content: space-between;
-        box-sizing: border-box;
-        
+    nav {
+      // border: $border;
+      display: flex;
+      height: 8vh;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
 
-        a{
-            font-family: "Russo One";
-            font-size: 1.5em;
-            color: #F1F5F9;
-            text-decoration: none;
-            transition: color 0.25s,
-                        transform 0.50s ease-out;
+      a {
+        font-family: "Russo One";
+        font-size: 1.5em;
+        color: #f1f5f9;
+        text-decoration: none;
+        transition: color 0.25s, transform 0.5s ease-out;
 
-            &:hover{
-              color: #646cff;
-              transform: translateX(25px);
-            }
+        &:hover {
+          color: #646cff;
+          transform: translateX(25px);
         }
-        
-        img{
-            height: 30px;
-            transition: transform 0.50s ease-out;
-            
-            &:hover{
-                transform: translateX(-25px);
-            }
+      }
+
+      img {
+        height: 30px;
+        transition: transform 0.5s ease-out;
+
+        &:hover {
+          transform: translateX(-25px);
         }
+      }
     }
+  }
+
+  // Main JSX Styling
+  main {
+    display: flex;
+    // border: $border;
+    height: 80vh;
+    
+    box-sizing: border-box;
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+    // Logo JSX Styling
+    .logo-container {
+
+      position: absolute;
+      bottom: 60px;
+      // border: $border;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: #f1f5f9;
+        text-decoration: none;
+        border-radius: 50%;
+        // border: $border;
+        transition: color 0.25s, transform 0.5s ease-out,
+          background-color 0.5s ease;
+
+        img {
+          height: 30px;
+          margin-right: 8px;
+          margin: 10px;
+        }
+
+        &:hover {
+          transform: translateX(25px);
+          background-color: #646cff;
+        }
+      }
+    }
+
+    // Navigation JSX Styling
+    .navigation-container {
+      // border: $border;
+      height: auto;
+      width: 100%;
+      align-content: center;
+
+      ul {
+        text-align: center;
+        // border: $border;
+        list-style: none;
+
+        p {
+          font-family: "Kanit";
+          font-size: 45px;
+          color: #f1f5f9;
+          text-decoration: none;
+          transition: color 0.5s ease-out, font-size 0.25s ease-out,
+            font-family 0.25s ease-out;
+
+          &:hover {
+            color: #646cff;
+            font-size: 65px;
+            font-family: "Russo One";
+          }
+        }
+      }
+    }
+
+    //Home JSX Styling
+    .landing-container {
+      padding: 0 24px;
+      width: 100%;
+      text-align: right;
+      // border: $border;
+
+      .first-name {
+        font-size: 36px;
+      }
+      .middle-last {
+        font-size: 32px;
+      }
+
+      h1,
+      h2,
+      h3,
+      a {
+        // border: $border;
+        color: #f1f5f9;
+        transition: color 0.25s ease, transform 0.5s ease-out;
+
+        &:hover {
+          color: #646cff;
+          transform: translateX(-45px);
+
+          a {
+            text-shadow: 3px 3px 12px #646cff;
+            color: #f1f5f9;
+          }
+        }
+      }
+
+      h1 {
+        font-family: "Russo One";
+      }
+
+      .design-credit {
+        color: #f1f5f9;
+        font-family: "Roboto";
+
+        a {
+          // text-shadow: 3px 3px 12px #646cff;
+          color: #646cff;
+          text-decoration: none;
+          &:active {
+            color: #f1f5f9;
+          }
+        }
+      }
+
+      hr {
+        position:relative;
+        left: 450px;
+        width: 35vh;
+      }
+    }
+
+    //Profile JSX styling
+    .profile-container {
+      padding: 0 100px;
+      section {
+        // border: $border;
+
+        p {
+          text-align: justify;
+        }
+
+        h2,
+        h3,
+        p,
+        li,
+        p {
+          color: #f1f5f9;
+          transition: color 0.5s ease-out, font-size 0.5s ease-out,
+            font-family 0.5s ease-out, transform 0.5s ease-out;
+
+          &:hover {
+            color: #646cff;
+            // font-size: 18px;
+            font-family: "Russo One";
+            transform: translateX(25px);
+          }
+        }
+      }
+
+      p {
+        color: #f1f5f9;
+        transition: color 0.5s ease-out, font-size 0.5s ease-out,
+          font-family 0.5s ease-out, transform 0.5s ease-out;
+
+        &:hover {
+          color: #646cff;
+          // font-size: 18px;
+          font-family: "Russo One";
+          transform: translateX(25px);
+        }
+      }
+
+      .profile-footer {
+        display: flex;
+        flex-direction: column;
+
+        p, address {
+          font-size: 16px;
+          padding: 0;
+          margin: 0;
+          transition: color 0.25s ease-out;
+
+          a{
+            font-size: 16px;
+            color: #646cff;
+          }
+
+          &:hover{
+            color: #646cff;
+
+            a{
+              color: #f1f5f9;
+            }
+
+          }
+        }
+      }
+    }
+
+    //Project JSX stylingg
+    .project-container {
+      padding: 0 60px;
+
+      .palindrome-project {
+        // width: 100%;
+        margin: 0 auto;
+        // border: $border;
+
+        .snap-container {
+          margin: 0 auto;
+          display: flex;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          width: 75%;
+          height: auto;
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+
+        .snap-container::-webkit-scrollbar {
+          display: none;
+        }
+
+        .snap-container img {
+          scroll-snap-align: start;
+          flex: 0 0 auto;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .link-wrapper {
+          text-align: center;
+          a {
+            color: #f1f5f9;
+            margin: 0 45px;
+            transition: color 0.5s ease-out, font-family 0.25s ease-out,
+              font-size 0.25s ease-out;
+
+            &:hover {
+              color: #646cff;
+              font-family: "Russo One";
+              font-size: 18px;
+            }
+          }
+        }
+
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 
-// Main JSX Styling
-main{
+@media (min-width: 801px) and (max-width: 1200px){
+ 
+    header {
+    margin-top: 35px;
+    padding: 0px 16px 0px 16px;
+    // border: $border;
+
+    nav {
+      // border: $border;
+      display: flex;
+      height: 8vh;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+
+      a {
+        font-family: "Russo One";
+        font-size: 1.5em;
+        color: #f1f5f9;
+        text-decoration: none;
+        transition: color 0.25s, transform 0.5s ease-out;
+
+        &:hover {
+          color: #646cff;
+          transform: translateX(25px);
+        }
+      }
+
+      img {
+        height: 30px;
+        transition: transform 0.5s ease-out;
+
+        &:hover {
+          transform: translateX(-25px);
+        }
+      }
+    }
+  }
+
+  // Main JSX Styling
+  main {
     padding: 8px 16px 8px 16px;
     display: flex;
     // border: $border;
@@ -54,247 +344,605 @@ main{
     scrollbar-width: none;
     scroll-behavior: smooth;
 
-
-
     // Logo JSX Styling
-    .logo-container{
-        position: absolute;
-        bottom: 60px;
+    .logo-container {
+      position: absolute;
+      bottom: 60px;
+      // border: $border;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: #f1f5f9;
+        text-decoration: none;
+        border-radius: 50%;
         // border: $border;
-        
-        a{  
-            display: flex;
-            align-items: center;
-            color: #F1F5F9;
-            text-decoration: none;
-            border-radius: 50%;
-            // border: $border;
-            transition: color 0.25s, 
-                        transform 0.50s ease-out,
-                        background-color 0.50s ease;
+        transition: color 0.25s,
+          background-color 0.5s ease;
 
-            img{
-                height: 30px;
-                margin-right: 8px;
-                margin: 10px; 
-            }
-
-
-            &:hover{
-                
-                transform: translateX(25px);
-                background-color: #646cff;
-                
-             }
-            
+        img {
+          height: 30px;
+          margin-right: 8px;
+          margin: 10px;
         }
-    }
 
+        &:hover {
+       
+          background-color: #646cff;
+        }
+      }
+    }
 
     // Navigation JSX Styling
-    .navigation-container{
+    .navigation-container {
+      // border: $border;
+      height: auto;
+      width: 100%;
+      align-content: center;
+
+      ul {
+        text-align: center;
         // border: $border;
-        height: auto;
-        width: 100%;
-        align-content: center;
-        
-        ul{
-            text-align: center;
-            // border: $border;
-            list-style: none;
+        list-style: none;
 
-            p{
-                font-family: 'Kanit';
-                font-size: 45px;
-                color: #F1F5F9;
-                text-decoration: none;
-                transition: color 0.50s ease-out,
-                            font-size 0.25s ease-out,
-                            font-family 0.25s ease-out;
+        p {
+          font-family: "Kanit";
+          font-size: 45px;
+          color: #f1f5f9;
+          text-decoration: none;
+          transition: color 0.5s ease-out, font-size 0.25s ease-out,
+            font-family 0.25s ease-out;
 
-                &:hover{
-                    color: #646cff;
-                    font-size: 65px;
-                    font-family: 'Russo One';
-                }
-                
-            }
+          &:hover {
+            color: #646cff;
+            font-size: 65px;
+            font-family: "Russo One";
+          }
         }
+      }
     }
-
 
     //Home JSX Styling
-    .landing-container{
-        position: absolute;
-        right: 75px;
-        bottom:45px ;
-        text-align: right;
-       
-    
-        .first-name{
-            font-size: 48px;
+    .landing-container {
+      position: absolute;
+      right: 75px;
+      overflow: scroll;
+      scrollbar-width: none;
+      scroll-behavior: smooth;
+
+      padding-left: 45px;
+      text-align: right;
+
+      .first-name {
+        font-size: 26px;
+      }
+      .middle-last {
+        font-size: 22px;
+      }
+      .position{
+        font-size: 18px;
+      }
+      .skill-stack{
+        font-size: 16px;
+      }
+      .react-stack{
+        summary{
+          list-style: none;
+          font-weight: 900;
         }
-        .middle-last{
-            font-size: 36px;
+      }
+
+      h1,
+      h2,
+      h3,
+      a {
+        // border: $border;
+        color: #f1f5f9;
+        transition: color 0.25s ease, transform 0.5s ease-out;
+
+        &:hover {
+          color: #646cff;
+          transform: translateX(-45px);
+
+          a {
+            text-shadow: 3px 3px 12px #646cff;
+            color: #f1f5f9;
+          }
         }
+      }
 
-        span{
-            display: inline-block;
+      h1 {
+        font-family: "Russo One";
+      }
+
+      .design-credit {
+        color: #f1f5f9;
+        font-family: "Roboto";
+        font-size: 14px;
+
+        a {
+          // text-shadow: 3px 3px 12px #646cff;
+          color: #646cff;
+          text-decoration: none;
+          &:active {
+            color: #f1f5f9;
+          }
         }
-
-        
-        
-        h1, h2, h3, a{
-            // border: $border;
-            color: #F1F5F9;
-            transition: color 0.25s ease,
-                        transform 0.50s ease-out;
-
-            &:hover{
-                color: #646cff;
-                transform: translateX(-45px),;
-
-                a{
-                   text-shadow: 3px 3px 12px #646cff;
-                   color: #F1F5F9;
-                }
-            }
-        }
-
-        h1{
-            font-family: "Russo One";
-        }
-
-        .design-credit{
-            color: #F1F5F9;
-            font-family: 'Roboto';
-
-            a{
-                // text-shadow: 3px 3px 12px #646cff;
-                color: #646cff;
-                text-decoration: none;
-                &:active{
-                    color: #F1F5F9;
-                }
-            }
-        }
-
-
-        hr{
-            position: absolute;
-            right: 5px;
-            width: 35vh;
-        }
+      }
+      .disclaimer{
+        font-size: 12px;
+      }
+      hr {
+        position: relative;
+        left: 350px;
+        width: 45vh;
+      }
     }
 
-
     //Profile JSX styling
-    .profile-container{
-        padding: 0 100px;
-        section{
-            // border: $border;
+    .profile-container {
+      padding: 0 50px 0 60px;
+      
+      section {
+        // border: $border;
 
-            p{
-                text-align: justify;
-            }
+        p {
+          font-size: 18px;
+          text-align: justify;
+        }
+        h2{
+          font-size: 24px;
+        }
+        li{
+          font-size: 18px;
+        }
 
-            h2, h3, p, li, p{
-                color: #F1F5F9;
-                transition: color 0.50s ease-out,
-                            font-size 0.50s ease-out,
-                            font-family 0.50s ease-out,
-                            transform 0.50s ease-out;
+        h2,
+        h3,
+        p,
+        li,
+        p {
+          color: #f1f5f9;
+          transition: color 0.5s ease-out, font-size 0.5s ease-out,
+            font-family 0.5s ease-out, transform 0.5s ease-out;
 
-                &:hover{
-                    color: #646cff;
-                    // font-size: 18px;
-                    font-family: 'Russo One';
-                    transform: translateX(25px);
+          &:hover {
+            color: #646cff;
+            font-family: "Russo One";
+            transform: translateX(25px);
+          }
+        }
+      }
 
-                    
-                }
-            }
+      .education-section{
+
+        .school{
+          margin-bottom: 20px;
+
+          h3{
+            font-size: 20px;
+            margin: 0;
+          }
+
+          span{
+            font-size: 18px;
+          }
         }
 
         p{
-            color: #F1F5F9;
-            transition: color 0.50s ease-out,
-                            font-size 0.50s ease-out,
-                            font-family 0.50s ease-out,
-                            transform 0.50s ease-out;
-
-            &:hover{
-                color: #646cff;
-                // font-size: 18px;
-                font-family: 'Russo One';
-                transform: translateX(25px);
-            }
+          font-size: 14px;
         }
+    }
 
-        .profile-footer{
-            display: flex;
-            flex-direction: column;
-        
-            p{
-                padding: 0;
-                margin: 0;
-            }
+      .profile-footer {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          padding: 0;
+          margin: 0;
         }
+      }
     }
 
     //Project JSX stylingg
-    .project-container{
-        padding: 0 100px;
+    .project-container {
+      padding: 0 40px 0 60px;
 
-        .palindrome-project{
-            // width: 100%;
-            margin: 0 auto;
-            // border: $border;
+      .palindrome-project {
+        // width: 100%;
+        margin: 0 auto;
+        // border: $border;
 
-            .snap-container {
-                margin: 0 auto;
-                display: flex;
-                overflow-x: auto;
-                scroll-snap-type: x mandatory;
-                width: 45%;
-                height: auto;
-                scrollbar-width: none; 
-                -ms-overflow-style: none; 
-            }
-            
-            .snap-container::-webkit-scrollbar {
-                display: none; 
-            }
-            
-            .snap-container img {
-                scroll-snap-align: start;
-                flex: 0 0 auto;
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-
-            .link-wrapper{
-                text-align: center;
-                a{
-                    color: #F1F5F9;
-                    margin: 0  45px;
-                    transition: color 0.50s ease-out,
-                                font-family 0.25s ease-out,
-                                font-size 0.25s ease-out;
-
-                    &:hover{
-                        color: #646cff;
-                        font-family: 'Russo One';
-                        font-size: 18px;
-                    }
-                }
-            }
-
-            h2{
-                text-align: center;
-            }
-
+        .snap-container {
+          margin: 0 auto;
+          display: flex;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          width: 85%;
+          height: auto;
+          scrollbar-width: none;
+          -ms-overflow-style: none;
         }
+
+        .snap-container::-webkit-scrollbar {
+          display: none;
+        }
+
+        .snap-container img {
+          scroll-snap-align: start;
+          flex: 0 0 auto;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .link-wrapper {
+          text-align: center;
+          a {
+            color: #f1f5f9;
+            margin: 0 45px;
+            transition: color 0.5s ease-out, font-family 0.25s ease-out,
+              font-size 0.25s ease-out;
+
+            &:hover {
+              color: #646cff;
+              font-family: "Russo One";
+              font-size: 18px;
+            }
+          }
+        }
+
+        h2 {
+          text-align: center;
+        }
+      }
     }
+  }
+}
+
+@media (min-width:  320px) and (max-width: 800px){
+
+    // Header JSX Styling
+  header {
+    margin-top: 12px;
+    padding: 0px 16px 0px 16px;
+    // border: $border;
+
+    nav {
+      // border: $border;
+      display: flex;
+      height: 8vh;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+
+      a {
+        font-family: "Russo One";
+        font-size: 1.5em;
+        color: #f1f5f9;
+        text-decoration: none;
+        transition: color 0.25s, transform 0.5s ease-out;
+
+        &:hover {
+          color: #646cff;
+          transform: translateX(25px);
+        }
+      }
+
+      img {
+        height: 30px;
+        transition: transform 0.5s ease-out;
+
+        &:hover {
+          transform: translateX(-25px);
+        }
+      }
+    }
+  }
+
+  // Main JSX Styling
+  main {
+    padding: 4px 8px 4px 8px;
+    display: flex;
+    flex-direction: column;
+    // border: $border;
+    height: 80vh;
+    box-sizing: border-box;
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+    // Logo JSX Styling
+    .logo-container {
+        width: 85vw;
+        position: absolute;
+        bottom: 12px;
+
+        display: flex;
+        justify-content: space-around;
+        // border: $border;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: #f1f5f9;
+        text-decoration: none;
+        border-radius: 50%;
+        // border: $border;
+        transition: color 0.25s, transform 0.5s ease-out,
+          background-color 0.5s ease;
+
+        img {
+          height: 30px;
+          margin-right: 8px;
+          margin: 10px;
+        }
+
+        &:hover {
+          background-color: #646cff;
+        }
+      }
+    }
+
+    // Navigation JSX Styling
+    .navigation-container {
+      // border: $border;
+      height: auto;
+      width: 100%;
+      align-content: center;
+      
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70vh;
+        padding: 0;
+        text-align: center;
+        // border: $border;
+        list-style: none;
+
+        p {
+          font-family: "Kanit";
+          font-size: 32px;
+          color: #f1f5f9;
+          text-decoration: none;
+          transition: color 0.5s ease-out, font-size 0.25s ease-out,
+            font-family 0.25s ease-out;
+
+          &:hover {
+            color: #646cff;
+            font-size: 36px;
+            font-family: "Russo One";
+          }
+        }
+      }
+    }
+
+    //Home JSX Styling
+    .landing-container {
+      text-align: center;
+      // margin-bottom: 45px;
+
+      .first-name {
+        font-size: 24px;
+      }
+      .middle-last {
+        font-size: 20px;
+      }
+      .position{
+        font-size: 16px;
+      }
+      .skill-stack{
+        font-size: 16px;
+      }
+
+      .react-stack{
+
+        summary{
+          font-size: 14px;
+          font-weight: 900;
+        }
+      }
+      p{
+        font-size: 12px;
+        
+      }
+
+      .design-credit {
+        color: #f1f5f9;
+        font-family: "Roboto";
+        font-size: 12px;
+        a {
+          // text-shadow: 3px 3px 12px #646cff;
+          color: #646cff;
+          text-decoration: none;
+          &:active {
+            color: #f1f5f9;
+          }
+        }
+      }
+
+      h1,
+      h2,
+      h3,
+      a {
+        color: #f1f5f9;
+        transition: color 0.25s ease, transform 0.5s ease-out, font-size 0.50s ease-in;
+
+        &:hover {
+            color: #646cff;
+          a {
+            text-shadow: 3px 3px 12px #646cff;
+            color: #f1f5f9;
+          }
+        }
+      }
+
+      h1 {
+        font-family: "Russo One";
+      }
+    }
+
+    //Profile JSX styling
+    .profile-container {
+      padding: 0 8px 4px 8px;
+      
+      section {
+        padding-bottom: 4px;
+        // border: $border;
+
+        h2{
+          font-size: 20px;
+          text-align: center;
+        }
+        p {
+          font-size: 14px;
+          text-align: justify;
+        }
+
+        h3{
+          font-size: 16px;
+        }
+
+        li{
+          font-size: 14px;
+        }
+
+        h2,
+        h3,
+        p,
+        li,
+        p {
+          color: #f1f5f9;
+          transition: color 0.5s ease-out, font-size 0.5s ease-out,
+            font-family 0.5s ease-out, transform 0.5s ease-out;
+
+          &:hover {
+            color: #646cff;
+            font-family: "Russo One";
+         
+          }
+        }
+      }
+
+      .education-section{
+
+          .school{
+            margin-bottom: 16px;
+
+            h3{
+              font-size: 16px;
+              margin: 0;
+            }
+  
+            span{
+              font-size: 14px;
+            }
+          }
+
+          p{
+            font-size: 14px;
+          }
+      }
+
+      
+
+      .profile-footer {
+        display: flex;
+        flex-direction: column;
+        
+        p, address {
+          font-size: 12px;
+          padding: 0;
+          margin: 0;
+          transition: color 0.25s ease-out;
+
+          a{
+            font-size: 12px;
+            color: #646cff;
+          }
+
+          &:hover{
+            color: #646cff;
+
+            a{
+              color: #f1f5f9;
+            }
+
+          }
+        }
+
+        
+      }
+    }
+
+    //Project JSX stylingg
+    .project-container {
+      padding: 0 4px;
+
+      .palindrome-project {
+        // width: 100%;
+        margin: 0 auto;
+        // border: $border;
+
+        .snap-container {
+          margin: 0 auto;
+          display: flex;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          width: 90%;
+          height: auto;
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+
+        .snap-container::-webkit-scrollbar {
+          display: none;
+        }
+
+        .snap-container img {
+          scroll-snap-align: start;
+          flex: 0 0 auto;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .link-wrapper {
+          text-align: center;
+          a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #f1f5f9;
+            margin: 0 45px;
+            transition: color 0.5s ease-out, font-family 0.25s ease-out,
+              font-size 0.25s ease-out;
+
+            &:hover {
+              color: #646cff;
+              font-family: "Russo One";
+              font-size: 16px;
+            }
+          }
+        }
+
+        h2 {
+          font-size: 16px;
+          text-align: center;
+        }
+
+        details{
+
+          summary{
+            font-size: 14px;
+          }
+          li{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
 }

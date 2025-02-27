@@ -17,12 +17,11 @@ const Main = () => {
   return (
     <>
     <main>
-        
-        <Logo />
         {data.page === "Navigation" && <Navigation />}
         {data.page === "Home" && <Home />}
         {data.page === "Profile" && <Profile /> }
         {data.page === "Project" && <Project /> }
+        <Logo />
     </main>
     
     </>

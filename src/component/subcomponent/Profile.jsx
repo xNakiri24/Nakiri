@@ -14,7 +14,7 @@ const Profile = () => {
             
             </section>
             <hr />
-            <section className='experience'>
+            <section>
                 <h2>Experience</h2>
                 <h3>ICCT Colleges - Information Technology Intern (Jan 2024 - Apr 2024)</h3>
                 <ul>
@@ -46,21 +46,23 @@ const Profile = () => {
                 </ul>
             </section>
             <hr />
-            <section>
+            <section className='education-section'>
                 <h2>Education</h2>
-                <h3><strong>ICCT Colleges Sumulong Campus</strong></h3>
-                <h3>Bachelor of Science in Information Technology (2020 – 2024)</h3>
-                <h3><strong>International Electronics and Technical Institute, Inc.</strong></h3>
-                <h3>TVL - ICT (2018 – 2020)</h3>
+                <div className='school'>
+                <h3>ICCT Colleges Sumulong Campus</h3>
+                <span>Bachelor of Science in Information Technology (2020 – 2024)</span>
+                </div>
+                <div className='school'><h3>International Electronics and Technical Institute, Inc.</h3>
+                <span>TVL - ICT (2018 – 2020)</span></div>
+                <p>I am always open to new opportunities where I can apply my skills, learn, and contribute to meaningful projects.</p>
             </section>
-            <p>I am always open to new opportunities where I can apply my skills, learn, and contribute to meaningful projects.</p>
+            
             <hr />
             <div className="profile-footer">
                 <address>8 Rodeanna 5 Tanguile ST. Brgy. Fortune, Marikina City </address>
-                <p>Please check my other website <a href="http://www.nakiri.space" target="_blank" rel="noopener noreferrer">Nakiri's website</a></p>
                 <p>Email me at <a href="mailto:christianalupit24@outlook.com">christianalupit24@outlook.com</a></p>
                 <p>Contact me at <a href="tel:+639939609498">09939609498</a></p>
-                <p>&copy; 2025 Nakiri's group of website. All rights reserved.</p>
+                <p>&copy; 2025 Nakiri's group of website😆. All rights reserved.</p>
             </div>
 
         </div>
