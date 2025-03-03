@@ -1,8 +1,18 @@
-# React + Vite
+#Nakiri portfolio website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi! Welcome to my portfolio website
+This site is a personal space to showcase my projects, 
 
-Currently, two official plugins are available:
+About
+This portfolio will serve as:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A space for my personal projects.
+A place to reflect on past work and highlight areas of growth.
+A showcase of mindful, creative, and functional web projects.
+I hope to achieve consistent progress, both in technical skills and design capabilities, through each new project I add here.
+
+Weakness: Design taste🙃
+
+
+
+
