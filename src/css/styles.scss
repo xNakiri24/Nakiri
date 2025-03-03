@@ -108,6 +108,20 @@ $border: 1px solid white;
             font-family: "Russo One";
           }
         }
+        a {
+          font-family: "Kanit";
+          font-size: 45px;
+          color: #f1f5f9;
+          text-decoration: none;
+          transition: color 0.5s ease-out, font-size 0.25s ease-out,
+            font-family 0.25s ease-out;
+
+          &:hover {
+            color: #646cff;
+            font-size: 65px;
+            font-family: "Russo One";
+          }
+        }
       }
     }
 
@@ -384,6 +398,21 @@ $border: 1px solid white;
         list-style: none;
 
         p {
+          font-family: "Kanit";
+          font-size: 45px;
+          color: #f1f5f9;
+          text-decoration: none;
+          transition: color 0.5s ease-out, font-size 0.25s ease-out,
+            font-family 0.25s ease-out;
+
+          &:hover {
+            color: #646cff;
+            font-size: 65px;
+            font-family: "Russo One";
+          }
+        }
+
+        a {
           font-family: "Kanit";
           font-size: 45px;
           color: #f1f5f9;
@@ -700,6 +729,20 @@ $border: 1px solid white;
         list-style: none;
 
         p {
+          font-family: "Kanit";
+          font-size: 32px;
+          color: #f1f5f9;
+          text-decoration: none;
+          transition: color 0.5s ease-out, font-size 0.25s ease-out,
+            font-family 0.25s ease-out;
+
+          &:hover {
+            color: #646cff;
+            font-size: 36px;
+            font-family: "Russo One";
+          }
+        }
+        a {
           font-family: "Kanit";
           font-size: 32px;
           color: #f1f5f9;
