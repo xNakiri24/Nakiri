@@ -17,5 +17,5 @@ Design taste 🙃
 
 ## Scheduled Fix/Optimization:  
 **MARCH 4, 2025**  
-- Optimize code structure for responsive design  
+- Optimize code structure for responsive design  = **Pending**
 - **styles.scss (Stylesheet)** :: issue - Masyadong repetitive ang ibang code - **Pending**
